@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#slider_box {
+    			width: 670px;
+    			margin-left: 10px;     
+    			float:left;     
+			}
+			#slider {
+				width: 670px;
+				height:240px;
+				margin-top:10px;
+				position:relative;
+				overflow:hidden;
+			}
+			#slider #imgs {
+				position:absolute;
+				top: 0;  left: 0;
+				height:240px;
+			}
+			#slider #imgs li{
+				float:left;
+				z-index:0;
+			}
+			#slider #indexs {
+    			position:absolute;
+    			bottom:15px;
+    			right:30px;
+			}
+			#slider #indexs li {
+   				width: 22px;
+    			height: 22px;
+    			line-height: 22px;
+    			display: inline-block;
+    			background: #3e3e3e;
+    			color: #fff;    
+    			border-radius: 50%;
+    			text-align: center;
+    			cursor: pointer;
+    			margin-left:10px;
+			}
+			#slider #indexs li:hover,#slider #indexs li.hover {
+    			background:#b61b1f;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="slider_box">
+			<div id="slider">
+				<ul id="imgs">
+				</ul>
+				<ul id="indexs">
+				</ul>
+			</div>
+ 		</div>
+ 		<script src="js/jquery-1.2.6.min.js" type="text/javascript" charset="utf-8"></script>
+ 		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
